@@ -41,6 +41,7 @@ function App() {
       setAddresss(validatedAddress);
       setErrorState('hidden')
     } catch (e) {
+      console.log(e)
       let err = e.value !== '' ? "invalid Address" : '';
       setError(err)
       setAddresss(evt.target.value)
