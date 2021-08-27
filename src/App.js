@@ -24,7 +24,7 @@ function App() {
         await contract.mint(address);
         alert("Token sent, check your wallet, Contract address: 0x316748158Bf8a5C50cfF39aef9AC44aD0a9579B6")
       } catch (error) {
-        console.log(error.data.message)
+        console.log(error)
         setErrorState('none')
         setError(error.data.message)
       }
